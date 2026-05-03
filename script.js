@@ -7,13 +7,12 @@ import {
 } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-firestore.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAuz7p8hwBYbYwe-W2xw6s1m80ToA93Lx4",
-    authDomain: "projeto-agendamento-projetor.firebaseapp.com",
-    projectId: "projeto-agendamento-projetor",
-    storageBucket: "projeto-agendamento-projetor.firebasestorage.app",
-    messagingSenderId: "388443857631",
-    appId: "1:388443857631:web:b3a11057f365d27058bf6a",
-    measurementId: "G-KCYMLTJW7K"
+  apiKey: "AIzaSyBI7mvv4MvT6tKCvxz2R4gnsdXny4HvZsI",
+  authDomain: "agendamento-dom.firebaseapp.com",
+  projectId: "agendamento-dom",
+  storageBucket: "agendamento-dom.firebasestorage.app",
+  messagingSenderId: "856992388069",
+  appId: "1:856992388069:web:92088ce55e6ce27709d50c"
 };
 
 const app = initializeApp(firebaseConfig);
