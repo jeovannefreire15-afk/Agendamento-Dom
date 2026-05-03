@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Agendamentos — IEMA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="logos">
+            <div class="logo-item">
+                <img src="assets/logo do iema.png" alt="Logo IEMA">
+            </div>
+            <div class="logo-item">
+                <a href="https://leanding-page-iema-tech.vercel.app/" target="_blank" rel="noopener">
+                    <img src="assets/Monochrome Modern Technology Black Logo (1)-Photoroom (1).png" class="logo-grande" alt="IEMA Tech">
+                </a>
+            </div>
+            <div class="logo-item">
+                <img src="assets/Imagem do WhatsApp de 2025-04-19 à(s) 14.50.22_5df81ed7 - Copia-Photoroom.png" alt="Newton Bello">
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content main-content--list">
+
+        <div class="page-title">
+            <span class="label-tag label-tag--danger">Área Restrita</span>
+            <h1>Gerenciar <br><em>Agendamentos</em></h1>
+            <p class="subtitle">Visualize e remova agendamentos individualmente ou por professor.</p>
+        </div>
+
+        <div id="painel-gerenciar"></div>
+
+        <div id="gerenciar-vazio" class="tabela-vazia" style="display:none">
+            Nenhum agendamento ativo no momento.
+        </div>
+
+        <a href="index.html" class="link-agendamentos">
+            <span>← Voltar ao agendamento</span>
+        </a>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <strong>Iema-Tech</strong>
+            <p>Grupo de desenvolvedores do IEMA Pleno Newton Bello — criando soluções com tecnologia para transformar nosso dia a dia escolar.</p>
+            <small>© 2025 Iema Tech. Todos os direitos reservados.</small>
+        </div>
+    </footer>
+
+    <!-- Modal de confirmação -->
+    <div id="modal-overlay" class="modal-overlay" style="display:none">
+        <div class="modal-box">
+            <p class="modal-msg" id="modal-msg"></p>
+            <div class="modal-actions">
+                <button class="btn-modal-cancelar" id="modal-cancelar">Cancelar</button>
+                <button class="btn-modal-confirmar" id="modal-confirmar">Excluir</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

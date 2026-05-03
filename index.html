@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento — IEMA Newton Bello</title>
+    <link rel="shortcut icon" href="assets/Monochrome Modern Technology Black Logo (1)-Photoroom (1).png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/Monochrome Modern Technology Black Logo (1)-Photoroom (1).png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="logos">
+            <div class="logo-item">
+                <img src="assets/logo do iema.png" alt="Logo IEMA">
+            </div>
+            <div class="logo-item">
+                <a href="https://leanding-page-iema-tech.vercel.app/" target="_blank" rel="noopener">
+                    <img src="assets/Monochrome Modern Technology Black Logo (1)-Photoroom (1).png" class="logo-grande" alt="IEMA Tech">
+                </a>
+            </div>
+            <div class="logo-item">
+                <img src="assets/Imagem do WhatsApp de 2025-04-19 à(s) 14.50.22_5df81ed7 - Copia-Photoroom.png" alt="Newton Bello">
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <div class="page-title">
+            <span class="label-tag">Sistema de Reservas</span>
+            <h1>Agendamento <br><em>de Equipamentos</em></h1>
+            <p class="subtitle">Reserve projetores, caixas de som e espaços para o próximo dia útil.</p>
+        </div>
+
+        <div class="card form-card">
+            <form id="agendamento-form" novalidate>
+
+                <div class="field-group">
+                    <label for="professor">Nome do Professor</label>
+                    <input type="text" id="professor" placeholder="Ex: Prof. Carlos" required autocomplete="name">
+                </div>
+
+                <div class="field-group">
+                    <label for="projetor">Equipamento / Espaço</label>
+                    <div class="select-wrapper">
+                        <select id="projetor" required>
+                            <optgroup label="Projetores">
+                                <option value="Projetor 1">Projetor 1</option>
+                                <option value="Projetor 2">Projetor 2</option>
+                                <option value="Projetor 3">Projetor 3</option>
+                                <option value="Projetor 4">Projetor 4</option>
+                                <option value="Projetor 5">Projetor 5</option>
+                                <option value="Projetor 6">Projetor 6</option>
+                            </optgroup>
+                            <optgroup label="Caixas de Som">
+                                <option value="Caixa G">Caixa de som G</option>
+                                <option value="Caixa P">Caixa de som P</option>
+                            </optgroup>
+                            <optgroup label="Espaços">
+                                <option value="Lab1">Lab Info 1</option>
+                                <option value="Lab2">Lab Info 2</option>
+                                <option value="Auditorio">Auditório</option>
+                                <option value="Biblioteca">Biblioteca</option>
+                                <option value="Quadra de Esportes">Quadra de Esportes</option>
+                                <option value="Laboratorio Especial">Laboratório Especial</option>
+                            </optgroup>
+                        </select>
+                        <span class="select-arrow">&#8964;</span>
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <label>Horários Disponíveis</label>
+                    <div id="horarios-container"></div>
+                </div>
+
+                <button type="submit" class="btn-agendar">
+                    <span class="btn-text">Confirmar Agendamento</span>
+                    <span class="btn-icon">→</span>
+                </button>
+
+            </form>
+
+            <div id="toast" class="toast" aria-live="polite"></div>
+        </div>
+
+        <a href="agendamentos.html" class="link-agendamentos">
+            <span>Ver todos os agendamentos</span>
+            <span class="link-arrow">↗</span>
+        </a>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <strong>Iema-Tech</strong>
+            <p>Grupo de desenvolvedores do IEMA Pleno Newton Bello — criando soluções com tecnologia para transformar nosso dia a dia escolar.</p>
+            <small>© 2025 Iema Tech. Todos os direitos reservados.</small>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
